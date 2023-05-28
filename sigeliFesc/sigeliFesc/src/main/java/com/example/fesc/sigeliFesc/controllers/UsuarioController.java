@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.fesc.sigeliFesc.models.peticiones.UsuarioCrearRequestModel;
@@ -24,6 +26,8 @@ public class UsuarioController {
 
     @GetMapping()
     public List<UsuarioDataRestModel> verUsuarios(){
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         List<UsuarioDataRestModel> usuarioDataRestModelList = new ArrayList<UsuarioDataRestModel>();
 

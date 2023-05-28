@@ -11,6 +11,6 @@ public interface IMultaRepository extends CrudRepository<MultaEntity, Long> {
     public MultaEntity findById(long id);
     public MultaEntity findByPrestamoEntity(PrestamoEntity prestamoEntity);
 
-    public List<MultaEntity> findByIdEstado(long id);
+    public List<MultaEntity> findByIdEstado(int id);
 
 }

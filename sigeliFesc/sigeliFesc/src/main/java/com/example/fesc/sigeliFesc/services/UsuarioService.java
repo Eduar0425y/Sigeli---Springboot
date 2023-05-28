@@ -6,6 +6,9 @@ import java.util.UUID;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -212,6 +215,21 @@ public class UsuarioService implements IUsuarioService {
 
     }
 
-    
-    
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
+        UsuarioEntity usuarioEntity = iUsuarioRepository.findByDocumento(username);
+
+        if(usuarioEntity == null){
+
+            throw new UsernameNotFoundException(username);
+
+        }
+
+        User usuario = new User(usuarioEntity.getDocumento(), usuarioEntity.getpasswordEncriptada(), new ArrayList<>());
+
+        return usuario;
+
+    }
 }

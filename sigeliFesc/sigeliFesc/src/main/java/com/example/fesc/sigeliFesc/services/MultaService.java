@@ -274,14 +274,16 @@ public class MultaService implements IMultaService{
 
         }
 
-        for(MultaEntity multaEntity : iMultaRepository.findByIdEstado(6)){
-            long diasDesde = (long) Math.floor(multaEntity.getPrestamoEntity().getFechaEntrega().getTime() / (1000*60*60*24)); // convertimos a dias, para que no afecten cambios de hora
-            long diasHasta = (long) Math.floor(Date.valueOf(LocalDate.now()).getTime() / (1000*60*60*24)); // convertimos a dias, para que no afecten cambios de hora
-            long dias = diasHasta - diasDesde;
 
-            int pago = (int) ((3000) * dias);
-            multaEntity.setPago(pago);
-            iMultaRepository.save(multaEntity);
+        for(MultaEntity multaEntity : iMultaRepository.findByIdEstado(6)){
+                long diasDesde = (long) Math.floor(multaEntity.getPrestamoEntity().getFechaEntrega().getTime() / (1000 * 60 * 60 * 24)); // convertimos a dias, para que no afecten cambios de hora
+                long diasHasta = (long) Math.floor(Date.valueOf(LocalDate.now()).getTime() / (1000 * 60 * 60 * 24)); // convertimos a dias, para que no afecten cambios de hora
+                long dias = diasHasta - diasDesde;
+
+                int pago = (int) ((3000) * dias);
+                multaEntity.setPago(pago);
+                iMultaRepository.save(multaEntity);
+
         }
 
     }

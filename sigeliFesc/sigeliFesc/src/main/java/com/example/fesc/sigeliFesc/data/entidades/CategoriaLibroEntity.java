@@ -1,6 +1,6 @@
 package com.example.fesc.sigeliFesc.data.entidades;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 
