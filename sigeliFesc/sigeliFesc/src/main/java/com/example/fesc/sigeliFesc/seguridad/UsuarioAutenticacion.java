@@ -7,6 +7,7 @@ import com.example.fesc.sigeliFesc.services.UsuarioService;
 import com.example.fesc.sigeliFesc.shared.UsuarioDto;
 import com.example.fesc.sigeliFesc.utils.AppContexto;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.PrintWriter;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -78,6 +79,10 @@ public class UsuarioAutenticacion extends UsernamePasswordAuthenticationFilter {
 
         response.addHeader("Acces-Control-Expose-Headers", "Authorization");
         response.addHeader(ConstantesSecurity.HEADER_STRING, ConstantesSecurity.TOKEN_PREFIJO + token);
+        response.addHeader("Content-Type", "application/json");
+        PrintWriter  witer = response.getWriter();
+        witer.println("{\"token\" : \"" + token + "\"}");
+        witer.close();
     }
 
 

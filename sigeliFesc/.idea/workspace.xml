@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c8776d7-85da-4405-b992-e3f2118edc4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/models/clasesEnum/carrera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/models/clasesEnum/rol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/models/respuestas/CategoriaDataRestModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sigeliFesc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sigeliFesc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/SigeliFescApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/SigeliFescApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sigeliFesc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sigeliFesc/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/seguridad/UsuarioAutenticacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/sigeliFesc/src/main/java/com/example/fesc/sigeliFesc/seguridad/UsuarioAutenticacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +24,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Eduar Xavier/Desktop/EduarXavier/sigeliBackend/Sigeli---Springboot"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
