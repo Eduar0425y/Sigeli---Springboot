@@ -16,6 +16,7 @@ import { MultaDetalle } from "../pages/multa/Detallemulta.js"
 import { VerPagos } from "../pages/pagos/VerPagos.js"
 import { VerPrestamosPersona} from "../pages/prestamo/VerPrestamosPersona.js"
 import { VerPrestamos } from "../pages/prestamo/VerPrestamo.js"
+import { PrestamoDetalle } from "../pages/prestamo/DetallePrestamo.js"
 
 const Rutas = {
 
@@ -31,7 +32,8 @@ const Rutas = {
     "/verMulta/:id" : MultaDetalle,
     "/verPagos" : VerPagos,
     "/verPrestamos/:documento" : VerPrestamosPersona,
-    "/verPrestamos" : VerPrestamos
+    "/verPrestamos" : VerPrestamos,
+    "/verPrestamo/:id": PrestamoDetalle
 
 }
 

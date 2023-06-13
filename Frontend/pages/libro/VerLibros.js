@@ -18,6 +18,9 @@ const VerLibros = async () =>{
 
     const vista = `
 
+    <h3 style="text-align: center" class="mb-3 mt-5">Libros</h3>
+
+
     <div class="row">${libros.map(libro => 
         
             LibroCard(libro)

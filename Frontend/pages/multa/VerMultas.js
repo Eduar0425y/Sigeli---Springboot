@@ -21,6 +21,9 @@ const VerMultas = async () =>{
 
     const vista = `
 
+    <h3 style="text-align: center" class="mb-3 mt-5">Multas</h3>
+
+
     <div class="row">${multas.map(multa => 
         
             MultaCard(multa)

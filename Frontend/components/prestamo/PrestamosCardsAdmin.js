@@ -13,7 +13,7 @@ const PrestamosCardsAdmin = (prestamo, documento) =>{
             <p>Usuario: ${prestamo.usuarioEntity.nombre} - ${prestamo.usuarioEntity.documento}</p>
         </div>
         <div class="row">
-        <a href="#/verPrestamo/${prestamo.id}" class="btn btn-dark w-100 col-md-5">ver</a>
+        <a href="#/verPrestamoId/${prestamo.id}" class="btn btn-dark w-100 col-md-5">ver</a>
         </div>
         </div>
     </div>

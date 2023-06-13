@@ -25,6 +25,12 @@ export default (ruta) => {
 
     }
 
+    if(ruta == "verPrestamoId"){
+
+        return "/verPrestamo/:id"
+
+    }
+
     return `/${ruta}`
 
 }
