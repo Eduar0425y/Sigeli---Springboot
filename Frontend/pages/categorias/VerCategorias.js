@@ -18,6 +18,8 @@ const VerCategorias = async () =>{
 
     const vista = `
 
+    <h3 style="text-align: center" class="mb-3 mt-5">Categorías</h3>
+
     <div class="row">${categorias.map(categoria=> 
         
             CategoriaCard(categoria)

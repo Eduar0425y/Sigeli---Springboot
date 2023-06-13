@@ -18,6 +18,8 @@ const VerPagos = async () =>{
 
     const vista = `
 
+    <h3 style="text-align: center" class="mb-3 mt-5">Pagos</h3>
+
     <div class="row">${pagos.map(pago => 
         
             PagoCard(pago)
